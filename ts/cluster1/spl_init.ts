@@ -19,9 +19,9 @@ const connection = new Connection("https://api.devnet.solana.com", commitment);
             keypair,
             keypair.publicKey,
             null,
-            6
+            6  // setted to 6 to match the decimals of the token (as given in the week1 challenge)
         );
-        console.log(`Your mint address is: ${mint.toBase58()}`);
+        console.log(`Your mint address is: ${mint.toBase58()}`); //
     } catch(error) {
         console.log(`Oops, something went wrong: ${error}`)
     }
